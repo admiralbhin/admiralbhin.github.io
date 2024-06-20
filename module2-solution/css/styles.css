@@ -15,9 +15,10 @@
   
   .section {
     border: 1px solid black;
-    padding: 20px;
+    padding: 40px 20px 20px 20px; /* Added extra padding to the top */
     margin: 10px;
     position: relative;
+    min-height: 200px; /* Ensure enough height for content and title */
   }
   
   .section h2 {
