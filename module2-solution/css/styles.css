@@ -1,74 +1,73 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.section {
+  border: 1px solid black;
+  padding: 40px 20px 20px 20px; /* Added extra padding to the top */
+  margin: 10px;
+  position: relative;
+  min-height: 200px; /* Ensure enough height for content and title */
+}
+
+.section h2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: lightgray;
+  padding: 5px;
+  margin: 0;
+  border: 1px solid black;
+}
+
+.chicken {
+  background-color: lightcoral;
+}
+
+.beef {
+  background-color: lightgreen;
+}
+
+.sushi {
+  background-color: lightblue;
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
   .section {
-    border: 1px solid black;
-    padding: 40px 20px 20px 20px; /* Added extra padding to the top */
-    margin: 10px;
-    position: relative;
-    min-height: 200px; /* Ensure enough height for content and title */
+    width: 30%;
+    float: left;
   }
-  
-  .section h2 {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: lightgray;
-    padding: 5px;
-    margin: 0;
-    border: 1px solid black;
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    width: 45%;
+    float: left;
   }
-  
-  .chicken {
-    background-color: lightcoral;
+
+  .section:nth-child(3) {
+    width: 100%;
+    clear: both;
   }
-  
-  .beef {
-    background-color: lightgreen;
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+  .section {
+    width: 100%;
+    float: none;
   }
-  
-  .sushi {
-    background-color: lightblue;
-  }
-  
-  /* Desktop view */
-  @media (min-width: 992px) {
-    .section {
-      width: 30%;
-      float: left;
-    }
-  }
-  
-  /* Tablet view */
-  @media (min-width: 768px) and (max-width: 991px) {
-    .section {
-      width: 45%;
-      float: left;
-    }
-  
-    .section:nth-child(3) {
-      width: 100%;
-      clear: both;
-    }
-  }
-  
-  /* Mobile view */
-  @media (max-width: 767px) {
-    .section {
-      width: 100%;
-      float: none;
-    }
-  }
-  
+}
