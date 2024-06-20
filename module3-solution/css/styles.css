@@ -1,0 +1,19 @@
+/* Custom styles */
+body {
+    padding-top: 70px;
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: #e7e7e7;
+}
+.navbar-brand {
+    color: #333;
+}
+.navbar-nav>li>a {
+    color: #333;
+}
+@media (max-width: 767px) {
+    .navbar-nav {
+        background-color: #f8f9fa;
+    }
+}
